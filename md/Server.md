@@ -17,3 +17,7 @@
 ### S3. 測試可以取得資料庫中的資料"
 
 ![](Server_S3.png)
+
+### S4. 提供 api 路由，可以透過 api 路由取得 json data
+
+![](Server_S4.png)
