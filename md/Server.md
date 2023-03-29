@@ -20,4 +20,6 @@
 
 ### S4. 提供 api 路由，可以透過 api 路由取得 json data
 
+http://localhost:3000/api/card2_80
+
 ![](Server_S4.png)
