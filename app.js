@@ -13,6 +13,8 @@ const testDB = require('./utils/test-db');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
+var cors = require('cors')
+
 const cardRouter_80 = require('./routes/card_80');
 const card2ApiRouter_80 = require('./routes/api/apiCardRouter_80');
 var app = express();
@@ -26,6 +28,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+app.use(cors());
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
